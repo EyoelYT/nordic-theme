@@ -53,6 +53,9 @@
       (nordic-night-dark1 (if (nordic-night-display-truecolor-or-graphic-p) "#3B4252" "black"))
       (nordic-night-dark2 (if (nordic-night-display-truecolor-or-graphic-p) "#434C5E" "#434C5E"))
       (nordic-night-dark3 (if (nordic-night-display-truecolor-or-graphic-p) "#4C566A" "brightblack"))
+      (nordic-night-lessdark3-1 (if (nordic-night-display-truecolor-or-graphic-p) "#6B7386" "#6B7386"))
+      (nordic-night-lessdark3-2 (if (nordic-night-display-truecolor-or-graphic-p) "#8892A4" "#8892A4"))
+      (nordic-night-lessdark3-3 (if (nordic-night-display-truecolor-or-graphic-p) "#B5BDCC" "#B5BDCC"))
       (nordic-night-snowy4 (if (nordic-night-display-truecolor-or-graphic-p) "#D8DEE9" "#D8DEE9"))
       (nordic-night-snowy5 (if (nordic-night-display-truecolor-or-graphic-p) "#E5E9F0" "white"))
       (nordic-night-snowy6 (if (nordic-night-display-truecolor-or-graphic-p) "#ECEFF4" "brightwhite"))
@@ -117,6 +120,7 @@
     `(font-lock-warning-face ((,class (:foreground ,nordic-night-orange12))))
     `(italic ((,class (:slant italic))))
     `(shadow ((,class (:foreground ,nordic-night-dark3))))
+    `(line-number-current-line ((,class (:foreground ,nordic-night-lessdark3-2))))
     `(underline ((,class (:underline t))))
     `(warning ((,class (:foreground ,nordic-night-yellow13 :weight bold))))
 
@@ -235,7 +239,7 @@
     `(show-paren-match-face ((,class (:foreground ,nordic-night-dark0 :background ,nordic-night-brightblue8))))
     `(show-paren-mismatch-face ((,class (:background ,nordic-night-red11))))
 
-    `(show-paren-match ((,class (:foreground ,nordic-night-dark0 :background ,nordic-night-brightblue8))))
+    `(show-paren-match ((,class (:background ,nordic-night-dark0))))
     `(show-paren-mismatch ((,class (:background ,nordic-night-red11))))
     `(success ((,class (:foreground ,nordic-night-green14))))
     `(tab-bar ((t (:background ,nordic-night-dark0 :foreground ,nordic-night-snowy4 :box nil))))
