@@ -1,4 +1,4 @@
-;;; nordic-night-theme.el --- A darker, more colorful version of the lovely Nord theme
+;;; nordic-night-theme.el --- A darker, more colorful version of the lovely Nord theme -*- lexical-binding: t -*-
 
 ;; Copyright (c) 2023 Ashton Wiersdorf
 
@@ -47,7 +47,8 @@
 
 ;;;; Color Constants
 (let ((class '((class color) (min-colors 89)))
-      (nordic-night-nearblack (if (nordic-night-display-truecolor-or-graphic-p) "#121212"))
+      (nordic-night-nearblack (if (nordic-night-display-truecolor-or-graphic-p) "#121212" "black"))
+      (nordic-night-lighterblack (if (nordic-night-display-truecolor-or-graphic-p) "#181818" "black"))
       (nordic-night-dark0 (if (nordic-night-display-truecolor-or-graphic-p) "#2E3440" nil))
       (nordic-night-dark1 (if (nordic-night-display-truecolor-or-graphic-p) "#3B4252" "black"))
       (nordic-night-dark2 (if (nordic-night-display-truecolor-or-graphic-p) "#434C5E" "#434C5E"))
@@ -68,7 +69,7 @@
       (nordic-night-attribute (if (nordic-night-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
       (nordic-night-class (if (nordic-night-display-truecolor-or-graphic-p) "#8FBCBB" "cyan"))
       (nordic-night-comment (if (nordic-night-display-truecolor-or-graphic-p) "#8892A4" "brightblack"))
-      (nordic-night-doc (if (nordic-night-display-truecolor-or-graphic-p) "#88E088" "green")) ; FIXME
+      (nordic-night-doc (if (nordic-night-display-truecolor-or-graphic-p) "#A3BE8C" "green"))
       (nordic-night-escape (if (nordic-night-display-truecolor-or-graphic-p) "#D08770" "brightyellow"))
       (nordic-night-method (if (nordic-night-display-truecolor-or-graphic-p) "#88C0D0" "brightcyan"))
       (nordic-night-keyword (if (nordic-night-display-truecolor-or-graphic-p) "#81A1C1" "blue"))
@@ -85,8 +86,7 @@
                                                      (string= nordic-night-region-highlight "snowstorm")) "#2E3440" nil))
       (nordic-night-region-highlight-background (if
                                                     (string= nordic-night-region-highlight "frost") "#88C0D0"
-                                                  (if (string= nordic-night-region-highlight "snowstorm") "#D8DEE9" "#434C5E")))
-      (nordic-night-uniform-mode-lines-background (if nordic-night-uniform-mode-lines "#4C566A" "#3B4252")))
+                                                  (if (string= nordic-night-region-highlight "snowstorm") "#D8DEE9" "#434C5E"))))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -167,7 +167,7 @@
     `(custom-state ((,class (:foreground ,nordic-night-green14))))
     `(custom-themed ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark2))))
     `(cursor ((,class (:background ,nordic-night-snowy4))))
-    `(fringe ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-dark0))))
+    `(fringe ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-lighterblack))))
     `(file-name-shadow ((,class (:inherit shadow))))
     `(header-line ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-dark2))))
     `(help-argument-name ((,class (:foreground ,nordic-night-brightblue8))))
@@ -193,10 +193,10 @@
     `(message-separator ((,class (:inherit shadow))))
     `(minibuffer-prompt ((,class (:foreground ,nordic-night-brightblue8 :weight bold))))
     `(mm-command-output ((,class (:foreground ,nordic-night-brightblue8))))
-    `(mode-line ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark3))))
+    `(mode-line ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-dark3 :width normal))))
+    `(mode-line-inactive ((,class (:foreground ,nordic-night-blue10 :background ,nordic-night-dark0 :width normal))))
     `(mode-line-buffer-id ((,class (:weight bold))))
     `(mode-line-highlight ((,class (:inherit highlight))))
-    `(mode-line-inactive ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-uniform-mode-lines-background))))
     `(next-error ((,class (:inherit error))))
     `(nobreak-space ((,class (:foreground ,nordic-night-dark3))))
     `(outline-1 ((,class (:foreground ,nordic-night-brightblue8 :weight bold))))
@@ -673,7 +673,6 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
-;; lexical-binding: t
 ;; End:
 
 ;;; nordic-night-theme.el ends here
