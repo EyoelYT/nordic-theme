@@ -555,7 +555,7 @@
     `(magit-process-ng ((,class (:foreground ,nordic-night-yellow13 :weight bold))))
     `(magit-process-ok ((,class (:foreground ,nordic-night-green14 :weight bold))))
     `(magit-section-heading ((,class (:foreground ,nordic-night-bluegreen7 :weight bold))))
-    `(magit-section-highlight ((,class (:background ,nordic-night-dark2))))
+    `(magit-section-highlight ((,class (:background ,nordic-night-lighterblack))))
 
     ;; > MU4E
     `(mu4e-header-marks-face ((,class (:foreground ,nordic-night-lapis9))))
