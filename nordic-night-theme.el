@@ -106,7 +106,7 @@
     `(font-lock-comment-face ((,class (:foreground ,nordic-night-comment :weight light))))
     `(font-lock-comment-delimiter-face ((,class (:foreground ,nordic-night-comment))))
     `(font-lock-constant-face ((,class (:foreground ,nordic-night-lapis9))))
-    `(font-lock-doc-face ((,class (:foreground ,nordic-night-comment))))
+    `(font-lock-doc-face ((,class (:foreground ,nordic-night-doc))))
     `(font-lock-function-name-face ((,class (:foreground ,nordic-night-brightblue8))))
     `(font-lock-keyword-face ((,class (:foreground ,nordic-night-purple15))))
     `(font-lock-negation-char-face ((,class (:foreground ,nordic-night-lapis9))))
