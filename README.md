@@ -2,6 +2,8 @@
 
 A darker, higher-contrast spin on the lovely [Nord color palette](https://nordtheme.com) and its corresponding [theme for Emacs](https://github.com/nordtheme/emacs).
 
+There's a place holder repo [on GitHub](https://github.com/ashton314/nordic-night) if you like starring things.
+
 # Description
 
 I really like the [Nord](https://nordtheme.com) color palette—I think the colors gel together really well. However, I never liked how low-contrast the background and body text were.
