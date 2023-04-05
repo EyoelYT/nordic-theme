@@ -5,7 +5,7 @@
 ;; Title: Nordic-Night Theme
 ;; Project: nordic-night-emacs
 ;; Version: 0.0.1
-;; URL: https://github.com/ashton314/nordic-night
+;; URL: https://sr.ht/~ashton314/nordic-night/
 ;; Author: Ashton Wiersdorf (mail@wiersdorf.dev)
 ;; Package-Requires: ((emacs "24"))
 ;; License: MIT
