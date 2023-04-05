@@ -8,7 +8,9 @@ This is my personal twist on the Nord theme for Emacs: this has a darker backgro
 
 # Screenshots
 
-Coming soon.
+Editing some Emacs Lisp. (Code from [Emacs Bedrock](https://sr.ht/~ashton314/emacs-bedrock/))
+
+![Screenshot of editing Emacs Lisp](screenshots/elisp.png)
 
 # Bugs and Contact
 
