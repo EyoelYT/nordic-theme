@@ -3,12 +3,12 @@
 ;; Copyright (c) 2023 Ashton Wiersdorf
 
 ;; Title: Nordic-Night Theme
-;; Project: nordic-night-emacs
+;; Author: Ashton Wiersdorf <mail@wiersdorf.dev>
+;; Created: 2023
 ;; Version: 0.0.1
-;; URL: https://sr.ht/~ashton314/nordic-night/
-;; Author: Ashton Wiersdorf (mail@wiersdorf.dev)
 ;; Package-Requires: ((emacs "24"))
 ;; License: MIT
+;; Homepage: https://sr.ht/~ashton314/nordic-night/
 
 ;;; Commentary:
 
