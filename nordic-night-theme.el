@@ -256,7 +256,7 @@
    `(term-color-magenta ((,class (:foreground ,nordic-night-purple15 :background ,nordic-night-purple15))))
    `(tool-bar ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-dark3))))
    `(tooltip ((,class (:foreground ,nordic-night-dark0 :background ,nordic-night-snowy4))))
-   `(trailing-whitespace ((,class (:foreground ,nordic-night-dark3))))
+   `(trailing-whitespace ((,class (:underline (:color ,nordic-night-yellow13 :style wave)))))
    `(tty-menu-disabled-face ((,class (:foreground ,nordic-night-dark1))))
    `(tty-menu-enabled-face ((,class (:background ,nordic-night-dark2 foreground ,nordic-night-snowy4))))
    `(tty-menu-selected-face ((,class (:foreground ,nordic-night-brightblue8 :underline t))))
