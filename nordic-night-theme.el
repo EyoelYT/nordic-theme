@@ -314,7 +314,7 @@
 
    ;; > Elixir
    `(elixir-attribute-face ((,class (:foreground ,nordic-night-annotation))))
-   `(elixir-atom-face ((,class (:foreground ,nordic-night-snowy4 :weight bold))))
+   `(elixir-atom-face ((,class (:foreground ,nordic-night-lapis9))))
 
    ;; > Enhanced Ruby
    `(enh-ruby-heredoc-delimiter-face ((,class (:foreground ,nordic-night-green14))))
@@ -436,6 +436,9 @@
    `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
    `(web-mode-variable-name-face ((,class (:foreground ,nordic-night-variable))))
 
+   ;; > Racket
+   `(racket-xp-unused-face ((,class (:strike-through nil :underline (:color ,nordic-night-yellow13 :style wave)))))
+
    ;; +--- UI ---+
    ;; > Anzu
    `(anzu-mode-line ((,class (:foreground, nordic-night-brightblue8))))
@@ -446,6 +449,9 @@
    `(avy-lead-face-0 ((,class (:background ,nordic-night-blue10 :foreground ,nordic-night-snowy5))))
    `(avy-lead-face-1 ((,class (:background ,nordic-night-dark3 :foreground ,nordic-night-snowy5))))
    `(avy-lead-face-2 ((,class (:background ,nordic-night-purple15 :foreground ,nordic-night-snowy5))))
+
+   ;; > Blamer
+   `(blamer-face ((,class (:italic t :foreground ,nordic-night-dark1))))
 
    ;; > Company
    `(company-echo-common ((,class (:foreground ,nordic-night-dark0 :background ,nordic-night-snowy4))))
@@ -471,6 +477,9 @@
    `(diff-hl-change ((,class (:background ,nordic-night-yellow13))))
    `(diff-hl-insert ((,class (:background ,nordic-night-green14))))
    `(diff-hl-delete ((,class (:background ,nordic-night-red11))))
+
+   ;; > Eglot
+   `(eglot-highlight-symbol-face ((,class (:background ,nordic-night-dark3))))
 
    ;; > Evil
    `(evil-ex-info ((,class (:foreground ,nordic-night-brightblue8))))
