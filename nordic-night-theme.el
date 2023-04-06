@@ -19,18 +19,22 @@
 (unless (>= emacs-major-version 24)
   (error "Nordic-Night theme requires Emacs 24.1 or later!"))
 
-(deftheme nordic-night "A darker, more colorful version of the lovely Nord theme")
+(deftheme nordic-night "A darker, more colorful version of the lovely Nord theme.")
 
 (defgroup nordic-night nil
   "Nordic-Night theme customizations.
-  The theme has to be reloaded after changing anything in this group."
+The theme has to be reloaded after changing anything in this group."
   :group 'faces)
 
 (defcustom nordic-night-region-highlight nil
-  "Allows to set a region highlight style based on the Nordic-Night components.
-  Valid styles are
-    - 'snowstorm' - Uses 'nordic-night-dark0' as foreground- and 'nordic-night-snowy4' as background color
-    - 'frost' - Uses 'nordic-night-dark0' as foreground- and 'nordic-night-brightblue8' as background color"
+  "Set a region highlight style based on the Nordic-Night components.
+Valid styles are
+
+    - 'snowstorm' - Uses 'nordic-night-dark0' as foreground- and
+      'nordic-night-snowy4' as background color
+
+    - 'frost' - Uses 'nordic-night-dark0' as foreground- and
+      'nordic-night-brightblue8' as background color"
   :type 'string
   :group 'nordic-night)
 
@@ -42,7 +46,7 @@
 (setq nordic-night-theme--brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
 
 (defun nordic-night--fullcolorp ()
-  "Returns whether the display can display nordic-night colors"
+  "Return whether the display can display nordic-night colors."
   (or (>= (display-color-cells) 16777216) (display-graphic-p)))
 
 ;;;; Color Constants
