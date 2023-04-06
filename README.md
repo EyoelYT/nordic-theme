@@ -25,6 +25,27 @@ This is not yet on *ELPA, so the easiest way is to just clone this repository so
 (load-theme 'nordic-night t)
 ```
 
+## Straight
+
+If you use [straight.el](https://github.com/radian-software/straight.el) and [use-package](https://github.com/jwiegley/use-package), you can activate Nordic Night like so in your config:
+
+```emacs-lisp
+(use-package nordic-night-theme
+    :straight (:type git :repo "https://git.sr.ht/~ashton314/nordic-night" :branch "main")
+    :init (load-theme 'nordic-night t))
+```
+
+## Elpaca
+
+If you use [Elpaca](https://github.com/progfolio/elpaca), you can install Nordic Night like so:
+
+```emacs-lisp
+(use-package nordic-night-theme
+  :elpaca (nordic-night :host sourcehut :repo "ashton314/nordic-night")
+  :config
+  (load-theme 'nordic-night t))
+```
+
 # Screenshots
 
 All screenshots were taken on a computer running macOS using my [Iosevka Output Extended](https://sr.ht/~ashton314/iosevka-output/) font.
@@ -33,21 +54,37 @@ Editing some Emacs Lisp. (Code from [Emacs Bedrock](https://sr.ht/~ashton314/ema
 
 ![Screenshot of editing Emacs Lisp](screenshots/elisp.png)
 
-Using the excellent [Vertico](https://github.com/minad/vertico) completing-read interface with [Marginalia](https://github.com/minad/marginalia/) and [Orderless](https://sr.ht/~ashton314/emacs-bedrock/) enabled.
+Markdown file.
 
-![Screenshot of using the excellent Vertico package with Marginalia enabled.](screenshots/vertico.png)
-
-`find-file` with Vertico activated.
-
-![Screenshot of using find-file with Vertico](screenshots/find-file-vertico.png)
+![Screenshot of editing Markdown](screenshots/markdown.png)
 
 Using [Avy](https://github.com/abo-abo/avy).
 
-![Screenshot of Avy selection active](screenshots/avy.png)
+![Screenshot of Avy selection active](screenshots/detail-avy.png)
 
-Org-mode, Markdown-mode, and [Magit](https://magit.vc) open. (Org mode file is [here](https://git.sr.ht/~ashton314/microKanren).)
+Detail: dired.
 
-![Screenshot showing org-mode, markdown-mode, and Magit](screenshots/markdown-org-magit.png)
+![Screenshot of using dired](screenshots/dired.png)
+
+Detail: active and inactive mode-lines.
+
+![Screenshot of mode-lines, both active and inactive](screenshots/detail-modelines.png)
+
+Detail: tab-bar (active tab on left, inactive on right).
+
+![Screenshot of the tab-bar](screenshots/detail-tab-bar.png)
+
+Detail: using the excellent [Vertico](https://github.com/minad/vertico) completing-read interface with [Marginalia](https://github.com/minad/marginalia/).
+
+![Screenshot of using the excellent Vertico package with Marginalia enabled.](screenshots/detail-vertico-find-file.png)
+
+Detail: completion-at-point popup with [Corfu](https://github.com/minad/corfu).
+
+![Screenshot of Corfu usage](screenshots/detail-corfu.png).
+
+Detail: [Magit](https://magit.vc) status buffer.
+
+![Screenshot of the Magit status buffer](screenshots/detail-magit.png)
 
 # Bugs and Contact
 
