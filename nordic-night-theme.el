@@ -17,7 +17,7 @@
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
-  (error "Nordic-Night theme requires Emacs 24 or later!"))
+  (error "Nordic-Night theme requires Emacs 24.1 or later!"))
 
 (deftheme nordic-night "A darker, more colorful version of the lovely Nord theme")
 
@@ -462,6 +462,10 @@
    `(company-tooltip-common-selection ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark3))))
    `(company-tooltip-mouse ((,class (:inherit highlight))))
    `(company-tooltip-selection ((,class (:background ,nordic-night-dark3 :weight bold))))
+
+   ;; > Corfu
+   `(corfu-border ((,class (:background ,nordic-night-dark1))))
+   `(corfu-default ((,class (:background ,nordic-night-lighterblack))))
 
    ;; > diff-hl
    `(diff-hl-change ((,class (:background ,nordic-night-yellow13))))
