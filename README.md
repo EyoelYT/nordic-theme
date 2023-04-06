@@ -64,7 +64,7 @@ Using [Avy](https://github.com/abo-abo/avy).
 
 Detail: dired.
 
-![Screenshot of using dired](screenshots/dired.png)
+![Screenshot of using dired](screenshots/detail-dired.png)
 
 Detail: active and inactive mode-lines.
 
