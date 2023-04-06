@@ -120,7 +120,7 @@
    `(font-lock-warning-face ((,class (:foreground ,nordic-night-orange12))))
    `(italic ((,class (:slant italic :foreground ,nordic-night-brightblue8))))
    `(shadow ((,class (:foreground ,nordic-night-dark3))))
-   `(line-number-current-line ((,class (:foreground ,nordic-night-lessdark3-2))))
+   `(line-number-current-line ((,class (:foreground ,nordic-night-lessdark3-3))))
    `(underline ((,class (:underline t))))
    `(warning ((,class (:foreground ,nordic-night-yellow13 :weight bold))))
 
