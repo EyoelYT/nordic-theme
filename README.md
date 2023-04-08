@@ -86,6 +86,10 @@ Detail: [Magit](https://magit.vc) status buffer.
 
 ![Screenshot of the Magit status buffer](screenshots/detail-magit.png)
 
+Detail: Org-agenda.
+
+![Screenshot of org-agenda](screenshots/detail-org-agenda.png)
+
 # Bugs and Contact
 
 Submit bugs to the [issue tracker on SourceHut](https://todo.sr.ht/~ashton314/nordic-night).
