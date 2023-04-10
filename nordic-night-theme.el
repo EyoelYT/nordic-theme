@@ -26,25 +26,6 @@
 The theme has to be reloaded after changing anything in this group."
   :group 'faces)
 
-(defcustom nordic-night-region-highlight nil
-  "Set a region highlight style based on the Nordic-Night components.
-Valid styles are
-
-    - 'snowstorm' - Uses 'nordic-night-dark0' as foreground- and
-      'nordic-night-snowy4' as background color
-
-    - 'frost' - Uses 'nordic-night-dark0' as foreground- and
-      'nordic-night-brightblue8' as background color"
-  :type 'string
-  :group 'nordic-night)
-
-(defcustom nordic-night-uniform-mode-lines nil
-  "Enables uniform activate- and inactive mode lines using 'nordic-night-dark3' as background."
-  :type 'boolean
-  :group 'nordic-night)
-
-(setq nordic-night-theme--brightened-comments '("#4c566a" "#4e586d" "#505b70" "#525d73" "#556076" "#576279" "#59647c" "#5b677f" "#5d6982" "#5f6c85" "#616e88" "#63718b" "#66738e" "#687591" "#6a7894" "#6d7a96" "#6f7d98" "#72809a" "#75829c" "#78859e" "#7b88a1"))
-
 (defun nordic-night--fullcolorp ()
   "Return whether the display can display nordic-night colors."
   (or (>= (display-color-cells) 16777216) (display-graphic-p)))
@@ -59,7 +40,7 @@ Valid styles are
       (nordic-night-dark3        (if (nordic-night--fullcolorp) "#4C566A" "brightblack"))
       (nordic-night-lessdark3-1  (if (nordic-night--fullcolorp) "#6B7386" "#6B7386"))
       (nordic-night-lessdark3-2  (if (nordic-night--fullcolorp) "#8892A4" "#8892A4"))
-      (nordic-night-lessdark3-3  (if (nordic-night--fullcolorp) "#B5BDCC" "#B5BDCC"))
+      ;(nordic-night-lessdark3-3  (if (nordic-night--fullcolorp) "#B5BDCC" "#B5BDCC")) ; available for future use
       (nordic-night-snowy4       (if (nordic-night--fullcolorp) "#D8DEE9" "#D8DEE9"))
       (nordic-night-snowy5       (if (nordic-night--fullcolorp) "#E5E9F0" "white"))
       (nordic-night-snowy6       (if (nordic-night--fullcolorp) "#ECEFF4" "brightwhite"))
@@ -77,23 +58,15 @@ Valid styles are
       (nordic-night-class        (if (nordic-night--fullcolorp) "#8FBCBB" "cyan"))
       (nordic-night-comment      (if (nordic-night--fullcolorp) "#8892A4" "brightblack"))
       (nordic-night-doc          (if (nordic-night--fullcolorp) "#A3BE8C" "green"))
-      (nordic-night-escape       (if (nordic-night--fullcolorp) "#D08770" "brightyellow"))
       (nordic-night-method       (if (nordic-night--fullcolorp) "#88C0D0" "brightcyan"))
       (nordic-night-keyword      (if (nordic-night--fullcolorp) "#81A1C1" "blue"))
       (nordic-night-numeric      (if (nordic-night--fullcolorp) "#B48EAD" "magenta"))
       (nordic-night-operator     (if (nordic-night--fullcolorp) "#81A1C1" "blue"))
       (nordic-night-preprocessor (if (nordic-night--fullcolorp) "#5E81AC" "brightblue"))
       (nordic-night-punctuation  (if (nordic-night--fullcolorp) "#D8DEE9" "#D8DEE9"))
-      (nordic-night-regexp       (if (nordic-night--fullcolorp) "#EBCB8B" "yellow"))
       (nordic-night-string       (if (nordic-night--fullcolorp) "#A3BE8C" "green"))
       (nordic-night-tag          (if (nordic-night--fullcolorp) "#81A1C1" "blue"))
-      (nordic-night-variable     (if (nordic-night--fullcolorp) "#D8DEE9" "#D8DEE9"))
-      (nordic-night-region-highlight-foreground (if (or
-                                                     (string= nordic-night-region-highlight "frost")
-                                                     (string= nordic-night-region-highlight "snowstorm")) "#2E3440" nil))
-      (nordic-night-region-highlight-background (if
-                                                    (string= nordic-night-region-highlight "frost") "#88C0D0"
-                                                  (if (string= nordic-night-region-highlight "snowstorm") "#D8DEE9" "#434C5E"))))
+      (nordic-night-variable     (if (nordic-night--fullcolorp) "#D8DEE9" "#D8DEE9")))
 
 ;;;; +------------+
 ;;;; + Core Faces +
@@ -230,7 +203,6 @@ Valid styles are
    `(package-status-installed ((,class (:foreground ,nordic-night-bluegreen7 :weight bold))))
    `(package-status-unsigned ((,class (:underline ,nordic-night-yellow13))))
    `(query-replace ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark2))))
-   ;; `(region ((,class (:foreground ,nordic-night-region-highlight-foreground :background ,nordic-night-region-highlight-background))))
    `(region ((,class (:extend t :background ,nordic-night-dark0))))
    `(scroll-bar ((,class (:background ,nordic-night-dark3))))
    `(secondary-selection ((,class (:background ,nordic-night-dark2))))
