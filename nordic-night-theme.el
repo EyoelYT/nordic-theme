@@ -5,14 +5,17 @@
 ;; Title: Nordic-Night Theme
 ;; Author: Ashton Wiersdorf <mail@wiersdorf.dev>
 ;; Created: 2023
-;; Version: 0.2.0
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: MIT
 ;; Homepage: https://sr.ht/~ashton314/nordic-night/
 
 ;;; Commentary:
 
-;; Nordic-Night is a modification of the lovely Nord theme.
+;; Nordic-Night is a modification of the lovely Nord theme. It features a much
+;; darker background and more liberal use of the color palliate to make your
+;; buffer both more colorful as well as easier to read, whilst still retaining
+;; the calm, harmonious tones of the Nord theme.
 
 ;;; Code:
 

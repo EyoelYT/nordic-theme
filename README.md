@@ -1,5 +1,7 @@
 # Nordic Night Theme
 
+<a href="https://melpa.org/#/nordic-night-theme"><img alt="MELPA" src="https://melpa.org/packages/nordic-night-theme-badge.svg"/></a>
+
 A darker, higher-contrast spin on the lovely [Nord color palette](https://nordtheme.com) and its corresponding [theme for Emacs](https://github.com/nordtheme/emacs).
 
 There's a place holder repo [on GitHub](https://github.com/ashton314/nordic-night) if you like starring things.
@@ -18,7 +20,9 @@ I'll add some screenshots as I go along. Please feel free to [send any suggestio
 
 # Installing
 
-This is not yet on *ELPA, so the easiest way is to just clone this repository somewhere, then run:
+Nordic Night is now on [Melpa](https://melpa.org/#/nordic-night-theme), so provided you've [added MELPA](https://melpa.org/#/getting-started) to your `package-archives` variable, you should be able to run `package-update` and `package-install` to get it.
+
+Alternatively, you can just clone this repository and add the following to your `init.el`:
 
 ```emacs-lisp
 (load-file "path/to/nordic-night/nordic-night-theme.el")
@@ -35,6 +39,8 @@ If you use [straight.el](https://github.com/radian-software/straight.el) and [us
     :init (load-theme 'nordic-night t))
 ```
 
+The `:straight` keyword and explicit recipe are now unnecessary if you're using MELPA, but this still works if you want to pull the source directly.
+
 ## Elpaca
 
 If you use [Elpaca](https://github.com/progfolio/elpaca), you can install Nordic Night like so:
@@ -45,6 +51,8 @@ If you use [Elpaca](https://github.com/progfolio/elpaca), you can install Nordic
   :config
   (load-theme 'nordic-night t))
 ```
+
+The same goes for the `:elpaca` keyword as it does for the `:straight` keyword from above—you shouldn't really need it if you use MELPA.
 
 # Screenshots
 
