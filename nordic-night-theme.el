@@ -356,7 +356,7 @@ The theme has to be reloaded after changing anything in this group."
    `(js3-warning-face ((,class (:foreground ,nordic-night-yellow13))))
 
    ;; > Markdown
-   `(markdown-blockquote-face ((,class (:foreground ,nordic-night-comment))))
+   `(markdown-blockquote-face ((,class (:inherit org-quote))))
    `(markdown-bold-face ((,class (:inherit bold))))
    `(markdown-header-face-1 ((,class (:inherit org-level-1))))
    `(markdown-header-face-2 ((,class (:inherit org-level-2))))
@@ -548,6 +548,9 @@ The theme has to be reloaded after changing anything in this group."
    `(magit-process-ok ((,class (:foreground ,nordic-night-green14 :weight bold))))
    `(magit-section-heading ((,class (:foreground ,nordic-night-bluegreen7 :weight bold))))
    `(magit-section-highlight ((,class (:background ,nordic-night-lighterblack))))
+
+   ;; > Minimap
+   `(minimap-active-region-background ((,class (:background ,nordic-night-dark0))))
 
    ;; > MU4E
    `(mu4e-header-marks-face ((,class (:foreground ,nordic-night-lapis9))))

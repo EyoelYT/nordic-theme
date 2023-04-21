@@ -18,9 +18,107 @@ This is my personal twist on the Nord theme for Emacs: this has a darker backgro
 
 I'll add some screenshots as I go along. Please feel free to [send any suggestions](https://todo.sr.ht/~ashton314/nordic-night) you may have, though bear in mind this is a hobby project.
 
+# Color palette
+
+<style>
+.pill {
+  height: 5rem;
+  width: 8rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+.pill-row {
+    display: flex;
+    justify-content: around;
+    margin-bottom: 0.5rem;
+}
+</style>
+
+<div class="pill-row">
+  <div class="pill" style="background-color: #121212">
+    nearblack
+  </div>
+  <div class="pill" style="background-color: #181818">
+    lighterblack
+  </div>
+  <div class="pill" style="background-color: #3b4252">
+    nord1
+  </div>
+  <div class="pill" style="background-color: #434c5e">
+    nord2
+  </div>
+  <div class="pill" style="background-color: #4C566A">
+    nord3
+  </div>
+</div>
+<div class="pill-row">
+  <div class="pill" style="background-color: #6b7e86">
+    lessdark3.1
+  </div>
+  <div class="pill" style="background-color: #8892a4">
+    lessdark3.2
+  </div>
+  <div class="pill" style="background-color: #b5bdcc">
+    lessdark3.3
+  </div>
+</div>
+<div class="pill-row">
+  <div class="pill" style="background-color: #D8DEE9; color: #3b4252">
+    nord4
+  </div>
+  <div class="pill" style="background-color: #E5E9F0; color: #3b4252">
+    nord5
+  </div>
+  <div class="pill" style="background-color: #ECEFF4; color: #3b4252">
+    nord6
+  </div>
+</div>
+<div class="pill-row">
+  <div class="pill" style="background-color: #8FBCBB">
+    nord7
+  </div>
+  <div class="pill" style="background-color: #88C0D0">
+    nord8
+  </div>
+  <div class="pill" style="background-color: #81A1C1">
+    nord9
+  </div>
+  <div class="pill" style="background-color: #5E81AC">
+    nord10
+  </div>
+</div>
+<div class="pill-row">
+  <div class="pill" style="background-color: #BF616A">
+    nord11
+  </div>
+  <div class="pill" style="background-color: #D08770">
+    nord12
+  </div>
+  <div class="pill" style="background-color: #EBCB8B">
+    nord13
+  </div>
+  <div class="pill" style="background-color: #A3BE8C">
+    nord14
+  </div>
+  <div class="pill" style="background-color: #B48EAD">
+    nord15
+  </div>
+</div>
+
 # Installing
 
 Nordic Night is now on [Melpa](https://melpa.org/#/nordic-night-theme), so provided you've [added MELPA](https://melpa.org/#/getting-started) to your `package-archives` variable, you should be able to run `package-update` and `package-install` to get it.
+
+If you're using the excellent `use-package` macro (built-in with the upcoming Emacs 29 release!) then you can install it like so:
+
+```emacs-lisp
+(use-package nordic-night-theme
+  :ensure t
+  :config
+  (load-theme 'nordic-night t))
+```
 
 Alternatively, you can just clone this repository and add the following to your `init.el`:
 
@@ -29,7 +127,7 @@ Alternatively, you can just clone this repository and add the following to your 
 (load-theme 'nordic-night t)
 ```
 
-## Straight
+## Installing from source with Straight and Elpaca
 
 If you use [straight.el](https://github.com/radian-software/straight.el) and [use-package](https://github.com/jwiegley/use-package), you can activate Nordic Night like so in your config:
 
@@ -40,8 +138,6 @@ If you use [straight.el](https://github.com/radian-software/straight.el) and [us
 ```
 
 The `:straight` keyword and explicit recipe are now unnecessary if you're using MELPA, but this still works if you want to pull the source directly.
-
-## Elpaca
 
 If you use [Elpaca](https://github.com/progfolio/elpaca), you can install Nordic Night like so:
 
