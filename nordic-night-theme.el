@@ -368,10 +368,17 @@ The theme has to be reloaded after changing anything in this group."
    `(markdown-reference-face ((,class (:inherit markdown-link-face))))
    `(markdown-url-face ((,class (:foreground ,nordic-night-snowy4 :underline t))))
 
-;;; --- Proof General
-   `(proof-locked-face ((,class (:background "#233a10"))))
+;;; --- Proof General and Coq
+   `(proof-locked-face ((,class (:background "#182316"))))
    `(proof-error-face ((,class (:foreground ,nordic-night-orange12))))
    `(proof-queue-face ((,class (:foreground ,nordic-night-yellow13))))
+   `(proof-tactics-name-face ((,class (:foreground ,nordic-night-lapis9))))
+   `(proof-tacticals-name-face ((,class (:foreground ,nordic-night-orange12))))
+   `(proof-queue-face ((,class (:foreground ,nordic-night-yellow13))))
+   `(proof-declaration-name-face ((,class (:foreground ,nordic-night-green14))))
+
+   `(coq-solve-tactics-face ((,class (:foreground ,nordic-night-red11))))
+   `(coq-cheat-face ((,class (:background ,nordic-night-red11 :box (:line-width -1 :color ,nordic-night-red11, :style nil)))))
 
 ;;; --- Rainbow Delimeters
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,nordic-night-bluegreen7)))
@@ -451,7 +458,7 @@ The theme has to be reloaded after changing anything in this group."
    `(company-tooltip-selection ((,class (:background ,nordic-night-dark3 :weight bold))))
 
 ;;; --- Corfu
-   `(corfu-border ((,class (:background ,nordic-night-dark1))))
+   `(corfu-border ((,class (:background ,nordic-night-dark3))))
    `(corfu-default ((,class (:background ,nordic-night-lighterblack))))
 
 ;;; --- diff-hl
