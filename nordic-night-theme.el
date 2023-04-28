@@ -382,7 +382,7 @@ The theme has to be reloaded after changing anything in this group."
    `(proof-declaration-name-face ((,class (:foreground ,nordic-night-green14))))
 
    `(coq-solve-tactics-face ((,class (:foreground ,nordic-night-red11))))
-   `(coq-cheat-face ((,class (:background ,nordic-night-red11 :box (:line-width -1 :color ,nordic-night-red11, :style nil)))))
+   `(coq-cheat-face ((,class (:background ,nordic-night-red11 :box (:line-width -1 :color ,nordic-night-red11 :style nil)))))
 
 ;;; --- Rainbow Delimeters
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,nordic-night-bluegreen7)))
