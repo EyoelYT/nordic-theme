@@ -497,6 +497,19 @@ The theme has to be reloaded after changing anything in this group."
    `(git-gutter+-added ((,class (:foreground ,nordic-night-green14))))
    `(git-gutter+-deleted ((,class (:foreground ,nordic-night-red11))))
 
+;;; --- Gnus
+   `(gnus-cite-1 ((,class (:foreground ,nordic-night-green14))))
+   `(gnus-cite-2 ((,class (:foreground ,nordic-night-blue10))))
+   `(gnus-cite-3 ((,class (:foreground ,nordic-night-purple15))))
+   `(gnus-cite-4 ((,class (:foreground ,nordic-night-red11))))
+   `(gnus-cite-5 ((,class (:foreground ,nordic-night-orange12))))
+   `(gnus-cite-6 ((,class (:foreground ,nordic-night-yellow13))))
+   `(gnus-cite-7 ((,class (:foreground ,nordic-night-green14))))
+   `(gnus-cite-8 ((,class (:foreground ,nordic-night-blue10))))
+   `(gnus-cite-9 ((,class (:foreground ,nordic-night-purple15))))
+   `(gnus-cite-10 ((,class (:foreground ,nordic-night-red11))))
+   `(gnus-cite-11 ((,class (:foreground ,nordic-night-orange12))))
+
 ;;; --- Helm
    `(helm-bookmark-addressbook ((,class (:foreground ,nordic-night-bluegreen7))))
    `(helm-bookmark-directory ((,class (:foreground ,nordic-night-lapis9))))
