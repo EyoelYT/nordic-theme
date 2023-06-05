@@ -694,7 +694,11 @@ The theme has to be reloaded after changing anything in this group."
    `(ivy-remote ((,class (:foreground ,nordic-night-green14))))
 
 ;;; --- perspective
-   `(persp-selected-face ((,class (:foreground ,nordic-night-brightblue8 :weight bold))))))
+   `(persp-selected-face ((,class (:foreground ,nordic-night-brightblue8 :weight bold))))
+
+;;; --- xref
+   `(xref-match ((,class (:background ,nordic-night-lessdark3-1 :inherit nil))))
+   ))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
