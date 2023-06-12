@@ -5,7 +5,7 @@
 ;; Title: Nordic-Night Theme
 ;; Author: Ashton Wiersdorf <mail@wiersdorf.dev>
 ;; Created: 2023
-;; Version: 1.0.0
+;; Version: 1.1.0
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: MIT
 ;; Homepage: https://sr.ht/~ashton314/nordic-night/

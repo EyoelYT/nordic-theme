@@ -1,0 +1,17 @@
+#+title: Changelog for Nordic Night Theme
+
+* 1.1.0 — 2023-06-12
+
+Mostly a bunch of little changes that together make the theme quite nice:
+
+ - Darken fringe background
+ - Make hl-line pop more with new color
+ - Update xref-match face
+ - Lighten gnus-cite-2 face
+ - Add a little padding to the tab-bar (just 2px)
+ - Better colors for cited text in mu4e
+ - Lots more to proof general and coq; also make corfu-border brighter
+
+* 1.0.0 — 2023-04-17
+
+Released on MELPA.
