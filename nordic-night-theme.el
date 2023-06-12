@@ -150,7 +150,7 @@ The theme has to be reloaded after changing anything in this group."
    `(custom-state ((,class (:foreground ,nordic-night-green14))))
    `(custom-themed ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark2))))
    `(cursor ((,class (:background ,nordic-night-snowy4))))
-   `(fringe ((,class (:foreground ,nordic-night-dark3 :background ,nordic-night-brightblack1))))
+   `(fringe ((,class (:foreground ,nordic-night-dark3 :background ,nordic-night-nearblack))))
    `(file-name-shadow ((,class (:inherit shadow))))
    `(header-line ((,class (:foreground ,nordic-night-snowy4 :background ,nordic-night-dark2))))
    `(help-argument-name ((,class (:foreground ,nordic-night-brightblue8))))
