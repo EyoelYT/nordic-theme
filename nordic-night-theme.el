@@ -584,6 +584,7 @@ The theme has to be reloaded after changing anything in this group."
    `(mu4e-header-marks-face ((,class (:foreground ,nordic-night-lapis9))))
    `(mu4e-title-face ((,class (:foreground ,nordic-night-brightblue8))))
    `(mu4e-header-key-face ((,class (:foreground ,nordic-night-brightblue8))))
+   `(mu4e-related-face ((,class (:foreground ,nordic-night-dark3))))
    `(mu4e-highlight-face ((,class (:highlight))))
    `(mu4e-flagged-face ((,class (:foreground ,nordic-night-yellow13))))
    `(mu4e-unread-face ((,class (:foreground ,nordic-night-green14 :weight bold))))
