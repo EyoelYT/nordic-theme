@@ -208,6 +208,7 @@ The theme has to be reloaded after changing anything in this group."
    `(package-status-incompat ((,class (:foreground ,nordic-night-red11))))
    `(package-status-installed ((,class (:foreground ,nordic-night-bluegreen7 :weight bold))))
    `(package-status-unsigned ((,class (:underline ,nordic-night-yellow13))))
+   ;; `(pulse-highlight-start-face ((,class (:background ,nordic-night-yellow13))))
    `(query-replace ((,class (:foreground ,nordic-night-brightblue8 :background ,nordic-night-dark2))))
    `(region ((,class (:extend t :background ,nordic-night-dark0))))
    `(scroll-bar ((,class (:background ,nordic-night-dark3))))
@@ -620,7 +621,10 @@ The theme has to be reloaded after changing anything in this group."
    `(neo-vc-user-face ((,class (:foreground ,nordic-night-snowy4))))
 
 ;;; --- Cider
-   `(cider-result-overlay-face ((t (:background unspecified))))
+   `(cider-result-overlay-face ((,class (:background unspecified))))
+
+;;; --- Olivetti
+   `(olivetti-fringe ((,class (:background ,nordic-night-brightblack1))))
 
 ;;; --- Org
    `(org-level-1 ((,class (:foreground ,nordic-night-brightblue8 :weight extra-bold))))
