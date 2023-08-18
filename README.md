@@ -18,6 +18,12 @@ This is my personal twist on the Nord theme for Emacs: this has a darker backgro
 
 I'll add some screenshots as I go along. Please feel free to [send any suggestions](https://todo.sr.ht/~ashton314/nordic-night) you may have, though bear in mind this is a hobby project.
 
+Nordic Night has some support for terminals with a lower range of colors.
+
+## Nordic Midnight
+
+New in version 2.0.0, there is now a `nordic-midnight` theme: a few of the colors are little darker—most notably the background is pure black.
+
 <!-- # Color palette -->
 
 <!-- <style> -->
