@@ -746,6 +746,9 @@ The theme has to be reloaded after changing anything in this group."
      `(ido-first-match ((,class (:foreground ,nn-brightblue8 :weight bold))))
      `(ido-subdir ((,class (:foreground ,nn-lapis9))))
 
+;;; --- Vertico
+     `(vertico-current ((,class (:background ,nn-dark1))))
+
 ;;; --- ivy-mode
      `(ivy-current-match ((,class (:inherit region))))
      `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))

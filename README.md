@@ -1,8 +1,8 @@
-# Nordic Night Theme
+# Nordic Night Themes
 
 <a href="https://melpa.org/#/nordic-night-theme"><img alt="MELPA" src="https://melpa.org/packages/nordic-night-theme-badge.svg"/></a>
 
-A darker, higher-contrast spin on the lovely [Nord color palette](https://nordtheme.com) and its corresponding [theme for Emacs](https://github.com/nordtheme/emacs).
+Darker, higher-contrast themes using the lovely [Nord color palette](https://nordtheme.com).
 
 There's a place holder repo [on GitHub](https://github.com/ashton314/nordic-night) if you like starring things.
 
@@ -10,119 +10,36 @@ There's a place holder repo [on GitHub](https://github.com/ashton314/nordic-nigh
 
 I really like the [Nord](https://nordtheme.com) color palette—I think the colors gel together really well. However, I never liked how low-contrast the background and body text were.
 
-This is my personal twist on the Nord theme for Emacs: this has a darker background and uses a wider range of the color pallet in general code. Generally this makes Emacs a little more colorful and higher-contrast with the background without being too in-your-face about it. It's supposed to feel gentle and easy to read. Some of the major modifications include:
+This is my personal twist on the Nord theme for Emacs: two themes with darker backgrounds for higher contrast. Also the themes don't use as many of the colors that they could: these themes make more liberal use of the colors.
 
- - Background is much darker at `#121212`.
- - Many of the `font-lock-*-face` variables have been customized to use colors other than shades of blue.
- - No light-theme support.
+The themes are:
+
+ - **Nordic Night**
+ 
+   Features a darker background at `#121212`, and some of the UI elements have been tweaked to provide better contrast.
+   
+ - **Nordic Midnight** (new in v2.0.0!)
+ 
+   A pure-black background, with some of the colors from Nordic Night dimmed slightly.
 
 I'll add some screenshots as I go along. Please feel free to [send any suggestions](https://todo.sr.ht/~ashton314/nordic-night) you may have, though bear in mind this is a hobby project.
 
-Nordic Night has some support for terminals with a lower range of colors.
-
-## Nordic Midnight
-
-New in version 2.0.0, there is now a `nordic-midnight` theme: a few of the colors are little darker—most notably the background is pure black.
-
-<!-- # Color palette -->
-
-<!-- <style> -->
-<!-- .pill { -->
-<!--   height: 5rem; -->
-<!--   width: 8rem; -->
-<!--   text-align: center; -->
-<!--   margin-left: 0.5rem; -->
-<!--   margin-right: 0.5rem; -->
-<!--   border-radius: 0.5rem; -->
-<!-- } -->
-<!-- .pill-row { -->
-<!--     display: flex; -->
-<!--     justify-content: around; -->
-<!--     margin-bottom: 0.5rem; -->
-<!-- } -->
-<!-- </style> -->
-
-<!-- <div class="pill-row"> -->
-<!--   <div class="pill" style="background-color: #121212"> -->
-<!--     nearblack -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #181818"> -->
-<!--     lighterblack -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #3b4252"> -->
-<!--     nord1 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #434c5e"> -->
-<!--     nord2 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #4C566A"> -->
-<!--     nord3 -->
-<!--   </div> -->
-<!-- </div> -->
-<!-- <div class="pill-row"> -->
-<!--   <div class="pill" style="background-color: #6b7e86"> -->
-<!--     lessdark3.1 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #8892a4"> -->
-<!--     lessdark3.2 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #b5bdcc"> -->
-<!--     lessdark3.3 -->
-<!--   </div> -->
-<!-- </div> -->
-<!-- <div class="pill-row"> -->
-<!--   <div class="pill" style="background-color: #D8DEE9; color: #3b4252"> -->
-<!--     nord4 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #E5E9F0; color: #3b4252"> -->
-<!--     nord5 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #ECEFF4; color: #3b4252"> -->
-<!--     nord6 -->
-<!--   </div> -->
-<!-- </div> -->
-<!-- <div class="pill-row"> -->
-<!--   <div class="pill" style="background-color: #8FBCBB"> -->
-<!--     nord7 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #88C0D0"> -->
-<!--     nord8 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #81A1C1"> -->
-<!--     nord9 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #5E81AC"> -->
-<!--     nord10 -->
-<!--   </div> -->
-<!-- </div> -->
-<!-- <div class="pill-row"> -->
-<!--   <div class="pill" style="background-color: #BF616A"> -->
-<!--     nord11 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #D08770"> -->
-<!--     nord12 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #EBCB8B"> -->
-<!--     nord13 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #A3BE8C"> -->
-<!--     nord14 -->
-<!--   </div> -->
-<!--   <div class="pill" style="background-color: #B48EAD"> -->
-<!--     nord15 -->
-<!--   </div> -->
-<!-- </div> -->
+The Nordic Night themes also have some support for terminals with a lower range of colors. If your terminal only supports e.g. 256 colors, the themes will adjust to use colors in the supported space.
 
 # Installing
 
 Nordic Night is now on [Melpa](https://melpa.org/#/nordic-night-theme), so provided you've [added MELPA](https://melpa.org/#/getting-started) to your `package-archives` variable, you should be able to run `package-update` and `package-install` to get it.
 
-If you're using the excellent `use-package` macro (built-in with the upcoming Emacs 29 release!) then you can install it like so:
+If you're using the excellent `use-package` macro (built-in with Emacs 29!) then you can install it like so:
 
 ```emacs-lisp
 (use-package nordic-night-theme
   :ensure t
   :config
+
+  ;; Use this for the darker version
+  ;; (load-theme 'nordic-midnight t)
+
   (load-theme 'nordic-night t))
 ```
 
