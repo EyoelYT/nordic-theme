@@ -5,7 +5,7 @@
 ;; Title: Nordic-Night Theme
 ;; Author: Ashton Wiersdorf <mail@wiersdorf.dev>
 ;; Created: 2023
-;; Version: 2.0.0
+;; Version: 2.0.2
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: MIT
 ;; Homepage: https://sr.ht/~ashton314/nordic-night/
@@ -268,7 +268,7 @@ The theme has to be reloaded after changing anything in this group."
      `(package-status-unsigned ((,class (:underline ,nn-yellow13))))
      ;; `(pulse-highlight-start-face ((,class (:background ,nn-yellow13))))
      `(query-replace ((,class (:foreground ,nn-brightblue8 :background ,nn-dark2))))
-     `(region ((,class (:extend t :background ,nn-dark0))))
+     `(region ((,class (:extend t :background ,nn-dark1))))
      `(scroll-bar ((,class (:background ,nn-dark3))))
      `(secondary-selection ((,class (:background ,nn-dark2))))
 
