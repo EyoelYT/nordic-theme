@@ -52,6 +52,17 @@ The theme has to be reloaded after changing anything in this group."
     :nord15 "#b48ead")
   "Nord colors for full-color displays")
 
+(defvar nordic-night-auroa-bg
+  '(:nord07b "#3f4f4f"
+    :nord08b "#3d5056"
+    :nord09b "#3b4551"
+    :nord10b "#233949"
+    :nord11b "#512e31"
+    :nord12b "#573d35"
+    :nord13b "#61553d"
+    :nord14b "#46503e"
+    :nord15b "#4c3e4a"))
+
 (defvar nordic-night-colors
   '(:nn00 "#121212"
     :nn01 "#181818"
@@ -83,6 +94,18 @@ The theme has to be reloaded after changing anything in this group."
     :nord14 "#87af5f"
     :nord15 "#af87af")
   "Nord colors for limited-color displays")
+
+(defvar nordic-night-auroa-bg-shell
+  ;; FIXME
+  '(:nord07b "#38424e"
+    :nord08b "#2c3646"
+    :nord09b "#3d4e55"
+    :nord10b "#3e4c4c"
+    :nord11b "#4a2d2f"
+    :nord12b "#523a31"
+    :nord13b "#5e533b"
+    :nord14b "#444d3b"
+    :nord15b "#483c47"))
 
 (defvar nordic-night-colors-shell
   '(:nn00 "#121212"
