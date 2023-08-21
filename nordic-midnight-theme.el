@@ -56,15 +56,15 @@ The theme has to be reloaded after changing anything in this group."
   "Darker Nord colors for limited-color displays")
 
 (defvar nordic-midnight-auroa-bg
-  '(:nord07b "#252b2b"
-    :nord08b "#252c2e"                  ; obviously, don't try to contrast 07b and 08b
-    :nord09b "#22272d"
-    :nord10b "#1d2329"
-    :nord11b "#2c1e20"
-    :nord12b "#2f2420"
-    :nord13b "#332e24"
-    :nord14b "#272b24"
-    :nord15b "#2a2529")
+  '(:nord07b "#3f4f4f"
+    :nord08b "#3d5056"
+    :nord09b "#3b4551"
+    :nord10b "#233949"
+    :nord11b "#512e31"
+    :nord12b "#573d35"
+    :nord13b "#61553d"
+    :nord14b "#46503e"
+    :nord15b "#4c3e4a")
   "Darker Nord colors tuned for background")
 
 (defvar nordic-midnight-colors
