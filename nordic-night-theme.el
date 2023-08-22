@@ -686,6 +686,17 @@ The theme has to be reloaded after changing anything in this group."
      `(powerline-evil-visual-face ((,class (:foreground ,nn-dark0 :background ,nn-bluegreen7))))
      `(powerline-evil-replace-face ((,class (:foreground ,nn-dark0 :background ,nn-lapis9))))
 
+;;; --- Prism
+     `(prism-level-0 ((,class (:foreground ,nn-bluegreen7))))
+     `(prism-level-1 ((,class (:foreground ,nn-purple15))))
+     `(prism-level-2 ((,class (:foreground ,nn-brightblue8))))
+     `(prism-level-3 ((,class (:foreground ,nn-green14))))
+     `(prism-level-4 ((,class (:foreground ,nn-lapis9))))
+     `(prism-level-5 ((,class (:foreground ,nn-yellow13))))
+     `(prism-level-6 ((,class (:foreground ,nn-blue10))))
+     `(prism-level-7 ((,class (:foreground ,nn-orange12))))
+     `(prism-level-8 ((,class (:foreground ,nn-red11))))
+
 ;;; --- Pulsar
      `(pulsar-red ((,class (:background ,nn-bg11))))
      `(pulsar-green ((,class (:background ,nn-bg14))))
