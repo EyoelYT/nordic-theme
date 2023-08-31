@@ -769,7 +769,7 @@ The theme has to be reloaded after changing anything in this group."
      `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
      `(org-date ((,class (:foreground ,nn-brightblue8))))
      `(org-document-info ((,class (:foreground ,nn-snowy4))))
-     `(org-document-info-keyword ((,class (:foreground ,nn-dark3 :weight bold))))
+     `(org-document-info-keyword ((,class (:foreground ,nn-lessdark3-1 :weight bold))))
      `(org-document-title ((,class (:foreground ,nn-brightblue8 :weight bold))))
      `(org-done ((,class (:foreground ,nn-green14 :weight bold))))
      `(org-ellipsis ((,class (:foreground ,nn-dark3))))
