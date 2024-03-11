@@ -8,7 +8,7 @@
 ;; Version: 2.0.2
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: MIT
-;; Homepage: https://sr.ht/~ashton314/nordic-night/
+;; Homepage: https://codeberg.org/ashton314/nordic-night
 
 ;;; Commentary:
 
