@@ -808,6 +808,9 @@ The theme has to be reloaded after changing anything in this group."
 ;;; --- Vertico
      `(vertico-current ((,class (:background ,nn-dark1))))
 
+;;; --- Consult
+     `(consult-separator ((,class (:foreground ,nn-dark3))))
+
 ;;; --- ivy-mode
      `(ivy-current-match ((,class (:inherit region))))
      `(ivy-minibuffer-match-face-1 ((,class (:inherit default))))
