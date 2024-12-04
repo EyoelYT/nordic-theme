@@ -5,7 +5,7 @@
 ;; Title: Nordic-Night Theme
 ;; Author: Ashton Wiersdorf <mail@wiersdorf.dev>
 ;; Created: 2023
-;; Version: 2.0.2
+;; Version: 2.0.3
 ;; Package-Requires: ((emacs "24.1"))
 ;; SPDX-License-Identifier: MIT
 ;; Homepage: https://codeberg.org/ashton314/nordic-night
@@ -218,15 +218,15 @@ The theme has to be reloaded after changing anything in this group."
 ;;; -- UI
      `(border ((,class (:foreground ,nn-snowy4))))
      `(buffer-menu-buffer ((,class (:foreground ,nn-snowy4 :weight bold))))
-     `(button ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(button ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
      `(completions-annotations ((,class (:foreground ,nn-lapis9))))
      `(completions-common-part ((,class (:foreground ,nn-brightblue8 :weight bold))))
      `(completions-first-difference ((,class (:foreground ,nn-red11))))
-     `(custom-button ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
-     `(custom-button-mouse ((,class (:background ,nn-snowy4 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
-     `(custom-button-pressed ((,class (:background ,nn-snowy6 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
-     `(custom-button-pressed-unraised ((,class (:background ,nn-snowy4 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
-     `(custom-button-unraised ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(custom-button ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(custom-button-mouse ((,class (:background ,nn-snowy4 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(custom-button-pressed ((,class (:background ,nn-snowy6 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(custom-button-pressed-unraised ((,class (:background ,nn-snowy4 :foreground ,nn-dark0 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
+     ;; `(custom-button-unraised ((,class (:background ,nn-dark0 :foreground ,nn-brightblue8 :box (:line-width 2 :color ,nn-snowy4 :style sunken-button)))))
      `(custom-changed ((,class (:foreground ,nn-yellow13))))
      `(custom-comment ((,class (:foreground ,nn-comment))))
      `(custom-comment-tag ((,class (:foreground ,nn-bluegreen7))))
