@@ -190,7 +190,7 @@ The theme has to be reloaded after changing anything in this group."
      `(font-lock-warning-face ((,class (:foreground ,nn-orange12))))
      `(italic ((,class (:slant italic :foreground ,nn-brightblue8))))
      `(shadow ((,class (:foreground ,nn-dark3))))
-     `(line-number-current-line ((,class (:foreground ,nn-snowy4))))
+     `(line-number-current-line ((,class (:inherit default :foreground ,nn-snowy4))))
      `(underline ((,class (:underline t))))
      `(warning ((,class (:foreground ,nn-yellow13 :weight bold))))
 
