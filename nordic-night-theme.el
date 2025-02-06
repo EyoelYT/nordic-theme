@@ -215,6 +215,24 @@ The theme has to be reloaded after changing anything in this group."
      `(diff-refine-removed ((,class (:foreground ,nn-red11))))
      `(diff-removed ((,class (:foreground ,nn-red11))))
 
+;;; -- ediff
+     `(ediff-odd-diff-A ((,class (:background ,nn-dark0))))
+     `(ediff-odd-diff-B ((,class (:background ,nn-dark3))))
+     `(ediff-odd-diff-C ((,class (:background ,nn-dark1))))
+     `(ediff-even-diff-A ((,class (:background ,nn-dark0))))
+     `(ediff-even-diff-B ((,class (:background ,nn-dark3))))
+     `(ediff-even-diff-C ((,class (:background ,nn-dark1))))
+     `(ediff-fine-diff-A ((,class (:background ,nn-red11))))
+     `(ediff-fine-diff-B ((,class (:background ,nn-green14))))
+     `(ediff-fine-diff-C ((,class (:background ,nn-yellow13))))
+     `(ediff-current-diff-A ((,class (:background ,nn-bg11))))
+     `(ediff-current-diff-B ((,class (:background ,nn-bg14))))
+     `(ediff-current-diff-C ((,class (:background ,nn-bg13))))
+     `(ediff-odd-diff-Ancestor ((,class (:background ,nn-dark1))))
+     `(ediff-even-diff-Ancestor ((,class (:background ,nn-dark1))))
+     `(ediff-fine-diff-Ancestor ((,class (:background ,nn-bg07))))
+     `(ediff-current-diff-Ancestor ((,class (:background ,nn-bg10))))
+
 ;;; -- UI
      `(border ((,class (:foreground ,nn-snowy4))))
      `(buffer-menu-buffer ((,class (:foreground ,nn-snowy4 :weight bold))))
