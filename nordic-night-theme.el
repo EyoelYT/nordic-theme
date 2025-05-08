@@ -198,6 +198,10 @@ The theme has to be reloaded after changing anything in this group."
 ;;; --- C
      `(c-annotation-face ((,class (:foreground ,nn-annotation))))
 
+;;; --- CPerl
+     `(cperl-hash-face ((,class (:foreground ,nn-bluegreen7 :background nil :weight bold))))
+     `(cperl-array-face ((,class (:foreground ,nn-bluegreen7 :background nil :weight bold))))
+
 ;;; --- diff
      `(diff-added ((,class (:foreground ,nn-green14))))
      `(diff-changed ((,class (:foreground ,nn-yellow13))))
