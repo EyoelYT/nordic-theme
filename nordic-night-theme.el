@@ -740,7 +740,8 @@ The theme has to be reloaded after changing anything in this group."
      `(pulsar-magenta ((,class (:background ,nn-bg15))))
 
 ;;; --- Transient
-     `(transient-key-exit ((,class (:foreground ,nn-brightblue8))))
+     `(transient-key-stack ((,class (:foreground ,nn-brightblue8))))
+     `(transient-key-exit ((,class (:foreground ,nn-green14))))
 
 ;;; --- NeoTree
      `(neo-banner-face ((,class (:foreground ,nn-blue10))))
