@@ -802,7 +802,7 @@ The theme has to be reloaded after changing anything in this group."
      `(org-footnote ((,class (:foreground ,nn-brightblue8))))
      `(org-formula ((,class (:foreground ,nn-lapis9))))
      `(org-headline-done ((,class (:foreground ,nn-lessdark3-1))))
-     `(org-hide ((,class (:foreground ,nn-dark0 :background ,nn-dark0))))
+     `(org-hide ((,class (:foreground ,nn-dark0 :background ,nn-nearblack))))
      `(org-link ((,class (:underline ,nn-brightblue8))))
      `(org-priority ((,class (:foreground ,nn-purple15))))
      `(org-quote ((,class (:inherit org-block :slant italic :foreground ,nn-green14))))
